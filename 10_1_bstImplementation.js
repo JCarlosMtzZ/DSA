@@ -155,12 +155,14 @@ class BST {
     };
 };
 
+module.exports = BST;
+
 function traverse(node) {
     const tree = { value: node.value };
     tree.left = node.left === null ? null : traverse(node.left);
     tree.right = node.right === null ? null : traverse(node.right);
     return tree;
-  }
+}
 
 let myBST = new BST();
 
@@ -177,8 +179,8 @@ myBST.remove(52);
 //console.log(myBST);
 //console.log(myBST.lookup(1));
 
-const fs = require('fs');
-
-result = JSON.stringify(traverse(myBST.root));
-
-fs.appendFileSync('output.txt', result + '\n');
+//const fs = require('fs');
+//
+//result = JSON.stringify(traverse(myBST.root));
+//
+//fs.appendFileSync('output.txt', result + '\n');
