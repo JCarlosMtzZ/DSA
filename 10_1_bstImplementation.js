@@ -164,15 +164,15 @@ function traverse(node) {
     return tree;
 }
 
-let myBST = new BST();
-
-let nums = [47, 35, 13, 5, 19, 39, 38, 36, 44, 52, 51, 49, 48, 72, 59, 93, 62, 60, 61, 65, 63, 68];
-
-for (let i=0; i<nums.length; i++) {
-    myBST.insert(nums[i]);
-}
-
-myBST.remove(52);
+//let myBST = new BST();
+//
+//let nums = [47, 35, 13, 5, 19, 39, 38, 36, 44, 52, 51, 49, 48, 72, 59, 93, 62, 60, 61, 65, 63, 68];
+//
+//for (let i=0; i<nums.length; i++) {
+//    myBST.insert(nums[i]);
+//}
+//
+//myBST.remove(52);
 
 //console.log(JSON.stringify(traverse(myBST.root)));
 
